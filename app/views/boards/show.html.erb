@@ -15,7 +15,7 @@
 <form action="/insert_post" method="post">
   <div>
     <label for="title_field">Title</label>
-    <input id="title_field" type="text" name="title">
+    <input type="text" id="title" name="title">
   </div>
 
   <div>
@@ -28,15 +28,14 @@
     <input type="date" id="expires_on_field" name="expires_on">
   </div>
 
-  
-  
   <input type="hidden" id="board_id_field" name="board_id" value="<%= @the_board.id %>">
   
-
   <button>
     Add post
   </button>
 </form>
+
+<hr>
 
 <h2>Active posts</h2>
 
